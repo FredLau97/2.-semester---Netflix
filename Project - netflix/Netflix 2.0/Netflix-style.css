@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: rgba(18,17,17,1.00);
+}
+
+#logo {
+	margin-right: 5px;
+	margin-left: 50px;
+}
+
+.moviePoster {
+	width: 280px;
+	height: 364px;
+
+}
+
+.genreHeadlines{
+	margin-left: 50px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.scroll-Lbutton{
+	margin-left: 50px;
+}
+
+.scroll-Rbutton{
+	margin-right: 50px;
+}
+
+.scroll-bar{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.dropdown-menuPo{
+	margin-right: 90px;
+}
+
+.profil-logo{
+	position: relative;
+	margin-left: 10px;
+}
