@@ -12,30 +12,16 @@
             //GetGenres(function(result){});
             //GetMovies(function(result){});
             //GetTD(function(result){});
-
-              console.log(movies[0]);
               
              $(".genre").click(function(){
-                 console.log(`[`)
-                 for (var i = 0; i < TD.length; i++) {
-                     console.log(`{
-"title": "${TD[i].results[0].title}", 
-"year": "${TD[i].results[0].year}",
-"synopsis": "${TD[i].results[0].synopsis}",
-"runtime": "${TD[i].results[0].netflixruntime}",
-"genre": "${TD[i].results[0].imdbgenre}",
-"rating": "${TD[i].results[0].imdbrating}",
-"img": "${TD[i].results[0].img}"
-},`);
-                 }
-                 console.log(`]`)
+
              });
               
              $(".movie").click(function(){
-                 console.log(movieArr);
+                 
              });
               
-              $(".TD").click(function(){
+             $(".TD").click(function(){
                  console.log(TD);
              });
           });
