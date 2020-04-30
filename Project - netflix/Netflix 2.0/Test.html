@@ -2,17 +2,41 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
       <script src="API_external.js" type="text/javascript"></script>
+      <script src="movies.json" type="text/javascript"></script>
       <script>
-          var PLEASELIST = [];
-          
-          $( document ).ready(function() {
-            GetGenres(function(result){
+          /*var genreArr = [];
+          var movieArr = [];
+          var TD = [];*/
+         
+          $(() => { 
+            //GetGenres(function(result){});
+            //GetMovies(function(result){});
+            //GetTD(function(result){});
 
-            });
-             
-             $(".Hej").click(function(){
-                 console.log(PLEASELIST[0]);
-                 
+              console.log(movies[0]);
+              
+             $(".genre").click(function(){
+                 console.log(`[`)
+                 for (var i = 0; i < TD.length; i++) {
+                     console.log(`{
+"title": "${TD[i].results[0].title}", 
+"year": "${TD[i].results[0].year}",
+"synopsis": "${TD[i].results[0].synopsis}",
+"runtime": "${TD[i].results[0].netflixruntime}",
+"genre": "${TD[i].results[0].imdbgenre}",
+"rating": "${TD[i].results[0].imdbrating}",
+"img": "${TD[i].results[0].img}"
+},`);
+                 }
+                 console.log(`]`)
+             });
+              
+             $(".movie").click(function(){
+                 console.log(movieArr);
+             });
+              
+              $(".TD").click(function(){
+                 console.log(TD);
              });
           });
     </script>
@@ -22,7 +46,10 @@
 	  <p>Hey ho!</p>
       
       <div>
-      <button type="button" class="Hej">CLICK ME!</button>
+      <button type="button" class="genre">GENRE!</button>
+      <button type="button" class="movie">MOVIES!</button>
+      <button type="button" class="TD">Title Details!</button>
+          
       </div>
   </body>
 </html>
