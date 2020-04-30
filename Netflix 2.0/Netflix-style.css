@@ -21,7 +21,6 @@ body {
 
 .moviePoster:hover{
 	height: 384px;
-
 }
 
 .genreHeadlines{
@@ -52,7 +51,7 @@ body {
 }
 
 .inline{
-	display: inline-block;
+	display: inline-flex;
 }
 
 
@@ -100,5 +99,8 @@ body {
 
 	.container-space{
 		margin-bottom: 40px;
+	}
+	.inline{
+		display: inline-flex;
 	}
 }
