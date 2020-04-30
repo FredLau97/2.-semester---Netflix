@@ -2,8 +2,8 @@
 <html>
 
 <head>
-
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Netflix 2.0</title>
 
@@ -19,86 +19,86 @@
 
 </head>
 
-<body>
+<body>s
 	
-	<nav class="navbar navbar-expand-lg bg-transparent">
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <a  href="#">
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1198px-Netflix_2015_logo.svg.png" width="80" height="25" alt="">
+    </a>
+    <div class="bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-nav-demo" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-angle-down"></i>
+        </button>
+    </div>
 
+    <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" >
+                <a class="nav-link text-white" href="#">Start <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="#">Serier</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Film</a>
+            </li>
+		    <li class="nav-item">
+                <a class="nav-link text-white" href="#">Nyeste</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Min Liste</a>
+            </li>
+		    <li class="nav-item">
+			    <a class="nav-link text-white">Tinder!</a>
+		    </li>
+        </ul>
+        <ul class="navbar-nav ">
+            <form class="form-inline my-2 my-lg-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0 text-white " type="submit">Search</button>
+            </form>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <a  href="#">
-          <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1198px-Netflix_2015_logo.svg.png" width="80" height="25" alt="">
-      </a>
-
-    <ul class="navbar-nav mr-auto">
-
-
-      
-		<li class="nav-item active" >
-        <a class="nav-link text-white" href="#">Start <span class="sr-only">(current)</span></a>
-      </li>
-     
-		<li class="nav-item">
-        <a class="nav-link text-white " href="#">Serier</a>
-      </li>
-       
-		<li class="nav-item">
-        <a class="nav-link text-white" href="#">Film</a>
-      </li>
-		
-		<li class="nav-item">
-        <a class="nav-link text-white" href="#">Nyeste</a>
-      </li>
-		
-		<li class="nav-item">
-        <a class="nav-link text-white" href="#">Min Liste</a>
-      </li>
-	
-		<li class="nav-item">
-			<a class="nav-link text-white">Tinder!</a>
-		</li>
-
-    </ul>
-
-      <ul class="navbar-nav ">
-      <form class="form-inline my-2 my-lg-2">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger my-2 my-sm-0 text-white " type="submit">Search</button>
-      </form>
-
-          <div class="btn-group dropdown-menuPo profil-logo">
-              <button type="button" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="btn-group dropdown-menuPo profil-logo">
+                <button type="button" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/134093401/original/2466336c232836f0cf15607ee7494f014894a02a/make-you-a-drawn-profile-picture.jpeg" width="50" height="50">
-              </button>
-              <div class="dropdown-menu">
+                </button>
+                <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Indstillinger</a>
                   <a class="dropdown-item" href="#">Konto</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Log-ud</a>
-              </div>
-          </div>
-      </ul>
-
-
-
-
-  </div>
+                </div>
+            </div>
+        </ul>
+    </div>
 </nav>
 
-<div class="container-fluid scroll-bar">
+<div class="container-fluid container-space">
     <h2 class="genreHeadlines">Det bliver der set</h2>
-    <div>
+    <div class="row d-flex">
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
-        <img class="img-fluid moviePoster" src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="">
-        <img class="img-fluid moviePoster" src="https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg" alt="">
-        <img class="img-fluid moviePoster" src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SY1000_SX750_AL_.jpg" alt="">
-        <img class="img-fluid moviePoster" src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,643,1000_AL_.jpg" alt="">
-        <img class="img-fluid moviePoster" src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,641,1000_AL_.jpg" alt="">
-        <img class="img-fluid moviePoster" src="https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY999_CR0,0,644,999_AL_.jpg" alt="">
+        <a href="">
+        <img href="google.dk" class="moviePoster m-x-auto" src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt=""></a>
+        </a>
+        <a href="">
+        <img class="moviePoster m-x-auto d-none d-sm-block" src="https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg" alt="">
+        </a>
+        <a href="">
+        <img class="moviePoster m-x-auto d-none d-md-block" src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SY1000_SX750_AL_.jpg" alt="">
+        </a>
+        <a href="">
+        <img class="moviePoster m-x-auto d-none d-lg-block" src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,643,1000_AL_.jpg" alt="">
+        </a>
+        <a href="">
+        <img class="moviePoster m-x-auto d-none d-xl-block" src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,641,1000_AL_.jpg" alt="">
+        </a>
+        <a href="">
+        <img class="moviePoster m-x-auto d-none d-xl-block" src="https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY999_CR0,0,644,999_AL_.jpg" alt="">
+        </a>
         <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
     </div>
-
 </div>
+
 
 
 
