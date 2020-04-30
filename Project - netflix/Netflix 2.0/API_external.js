@@ -70,11 +70,6 @@ function GetTitleDetails(callback) {
 $.getJSON("movies.json", function(response) {
     movies.push(response);
     
-    AssignMovieToGenre();
-    
-});
-
-function AssignMovieToGenre() {
     for (var i = 0; i < movies[0].length; i++) {
         if (movies[0][i].genre.includes('Documentary'))
             documentary.push(JSON.stringify(movies[0][i]));
@@ -112,7 +107,7 @@ function AssignMovieToGenre() {
             buffer.push(JSON.stringify(movies[0][i]));
     }
     
-    console.log("Documentary:" + documentary);
+    /*console.log("Documentary:" + documentary);
     console.log("Drama:" + drama);
     console.log("Action:" + action);
     console.log("Comedy:" + comedy);
@@ -128,5 +123,6 @@ function AssignMovieToGenre() {
     console.log("Adventure:" + adventure);
     console.log("Horror:" + horror);
     console.log("Musical:" + musical);
-    console.log("Buffer:" + buffer);
-}
+    console.log("Buffer:" + buffer);*/
+        
+});
