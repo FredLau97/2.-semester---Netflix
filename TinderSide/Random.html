@@ -1,0 +1,140 @@
+<html>
+  <head>
+      <title>Tilfældig Film</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+    <script src="https://kit.fontawesome.com/685c06dcc5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" type="text/css" href="../Netflix%202.0/Netflix-style.css">
+
+      <style>
+          
+          .whiteText {
+              color: white;
+          }
+          
+          .centered {
+             float: none;
+             margin-left: auto;
+             margin-right: auto;
+          }
+          
+          .choiceBtn {
+              height: 70px;
+              font-size: 2em;
+          }
+                
+      </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <a  href="#">
+            <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1198px-Netflix_2015_logo.svg.png" width="80" height="25" alt="">
+        </a>
+        <div class="bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-nav-demo" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-angle-down"></i>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" >
+                    <a class="nav-link text-white" href="#">Start <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="#">Serier</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Film</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Nyeste</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Min Liste</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white">Tinder!</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ">
+                <form class="form-inline my-2 my-lg-2">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0 text-white " type="submit">Search</button>
+                </form>
+
+                <div class="btn-group dropdown-menuPo profil-logo">
+                    <button type="button" class="btn btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/134093401/original/2466336c232836f0cf15607ee7494f014894a02a/make-you-a-drawn-profile-picture.jpeg" width="50" height="50">
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Indstillinger</a>
+                      <a class="dropdown-item" href="#">Konto</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Log-ud</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+      
+      <div class = "col-12">
+        <div id = "poster" class = "col-8 float-left"> 
+            <img src = "testPoster.jpg" class="col-12">
+        </div>
+
+        <div id = "info" class = "col-4 float-right"> 
+            <div id = "title" class = "row align-self-start"> 
+                <h1 class = "whiteText"> Rogue One: A Star Wars Story </h1>
+            </div>
+            
+            <div id = "textBox" class = "row align-self-center">
+                <div id = "rating" class = "whiteText"> 
+                    <p>
+                    IMDB: 7.8/10
+                    </p>
+                </div>
+
+                <div id = "description" class = "whiteText"> 
+                    <p>
+                    Instruktør: Gareth Edwards
+                    </p>
+                    
+                    <p>
+                    Forfatter: Chris Weitz, Tony Gilroy, John Knoll, Gary Whitta, George Lucas
+                    </p>
+                    
+                    <p>
+                    Medvirkende: Felicity Jones, Mads Mikkelsen, Diego Luna, Alan Tudyk, Donnie Yen, Ben Mendelsohn, Riz ahmed, Wen Jiang
+                    </p>
+                    
+                    <p>
+                    The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.
+                    </p>
+                </div>
+                
+                <div id = "tags" class = "whiteText">
+                <h4>Tags:</h4>
+                    <button class = "tagButton" type = "button">Action</button>
+                    <button class = "tagButton" type = "button">Adventure</button>
+                    <button class = "tagButton" type = "button">Dead Rebel Scum by Lord Vaders hand!</button>
+                    <button class = "tagButton" type = "button">Science Fiction</button>
+                </div>
+            </div>
+        
+            <div id = "buttons" class = "row align-self-end"> 
+                <button id = "playBtn" class = "btn-success col-4 choiceBtn" type = "button">Play</button>
+                <button id = "listBtn" class = "btn-primary col-4 choiceBtn" type = "button">List</button>
+                <button id = "dislikeBtn" class = "btn-danger col-4 choiceBtn" type = "button">Nope</button>
+            </div>
+        </div>     
+      </div>
+      
+      
+  </body>
+</html>
