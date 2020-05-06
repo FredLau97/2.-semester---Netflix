@@ -28,9 +28,9 @@
               font-size: 2em;
           }
           
-          #tags {
-              margin-bottom: 20px;
-              margin-top: 80px;
+          .line {
+              background-color: white;
+              border-style: solid;
           }
                 
       </style>
@@ -96,7 +96,10 @@
         <div id = "info" class = "container col-4 float-right"> 
             <div id = "title" class = "row align-self-start"> 
                 <h1 class = "whiteText"> Rogue One: A Star Wars Story </h1>
+                
             </div>
+            
+            <hr class = "row line">
             
             <div id = "textBox" class = "row align-self-center">
                 <div id = "rating" class = "whiteText"> 
@@ -104,7 +107,7 @@
                     IMDB: 7.8/10
                     </p>
                 </div>
-
+                  
                 <div id = "description" class = "whiteText"> 
                     <p>
                     <strong>Instruktør:</strong> Gareth Edwards
@@ -122,7 +125,7 @@
                     <strong>Beskrivelse:</strong> The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.
                     </p>
                 </div>
-                
+                <hr class = "line">
                 <div id = "tags" class = "whiteText">
                 <h4>Tags:</h4>
                     <button class = "tagButton" type = "button">Action</button>
@@ -131,7 +134,7 @@
                     <button class = "tagButton" type = "button">Science Fiction</button>
                 </div>
             </div>
-        
+          <hr class = "row line">
             <div id = "buttons" class = "row align-self-end"> 
                 <button id = "playBtn" class = "btn-success col-4 choiceBtn" type = "button">Play</button>
                 <button id = "listBtn" class = "btn-primary col-4 choiceBtn" type = "button">List</button>
