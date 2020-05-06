@@ -18,3 +18,13 @@ function AddMovies() {
         $(thrillerMovies[i]).prepend(`<a href=""><img class="moviePoster m-x-auto d-none d-sm-block thrlM${i}" src="${thrillerData[i].img}" alt=""></a>`);
     }
 }
+
+function GenerateMatch() {
+    var rndMovieInd = Math.floor(Math.random() * action.length);
+    
+    $("#title").prepend(`<h1 class = "whiteText movTitle">${action[rndMovieInd].title}</h1>`);
+    $('.movRating').prepend(`<strong>IMDB</strong>: ${action[rndMovieInd].rating} / 10`);
+    $('.synopsis').append(`${action[rndMovieInd].synopsis}`);
+    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[rndMovieInd].img}">`);
+    $('.movTitle').prepend(`${action[rndMovieInd].title}`);
+}

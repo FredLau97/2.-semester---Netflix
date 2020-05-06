@@ -8,6 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+      <script src="main.js" type="text/javascript"></script>
+      <script src="API_external.js" type="text/javascript"></script>
+      <script src="movies.json"></script>
       
     <link rel="stylesheet" type="text/css" href="../Netflix%202.0/Netflix-style.css">
 
@@ -34,6 +38,11 @@
           }
                 
       </style>
+      <script>
+        $(() => {
+            GenerateMatch();
+        });
+      </script>
   </head>
   <body>
       <nav class="navbar navbar-expand-lg bg-transparent">
@@ -90,12 +99,11 @@
       
       <div class = "container col-12">
         <div id = "poster" class = "col-8 float-left"> 
-            <img src = "testPoster.jpg" class="col-12">
+            
         </div>
 
         <div id = "info" class = "container col-4 float-right"> 
             <div id = "title" class = "row align-self-start"> 
-                <h1 class = "whiteText"> Rogue One: A Star Wars Story </h1>
                 
             </div>
             
@@ -103,26 +111,14 @@
             
             <div id = "textBox" class = "row align-self-center">
                 <div id = "rating" class = "whiteText"> 
-                    <p>
-                    IMDB: 7.8/10
+                    <p class="movRating">
+                    
                     </p>
                 </div>
                   
                 <div id = "description" class = "whiteText"> 
-                    <p>
-                    <strong>Instruktør:</strong> Gareth Edwards
-                    </p>
-                    
-                    <p>
-                    <strong>Forfatter:</strong> Chris Weitz, Tony Gilroy, John Knoll, Gary Whitta, George Lucas
-                    </p>
-                    
-                    <p>
-                    <strong>Medvirkende:</strong>: Felicity Jones, Mads Mikkelsen, Diego Luna, Alan Tudyk, Donnie Yen, Ben Mendelsohn, Riz ahmed, Wen Jiang
-                    </p>
-                    
-                    <p>
-                    <strong>Beskrivelse:</strong> The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.
+                    <p class="synopsis">
+                    <strong>Beskrivelse:</strong>
                     </p>
                 </div>
                 <hr class = "line">
@@ -142,7 +138,5 @@
             </div>
         </div>     
       </div>
-      
-      
   </body>
 </html>
