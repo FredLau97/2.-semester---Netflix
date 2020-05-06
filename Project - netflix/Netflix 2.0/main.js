@@ -26,5 +26,5 @@ function GenerateMatch() {
     $('.movRating').prepend(`<strong>IMDB</strong>: ${action[rndMovieInd].rating} / 10`);
     $('.synopsis').append(`${action[rndMovieInd].synopsis}`);
     $('#poster').prepend(`<img class="col-12 movPoster" src="${action[rndMovieInd].img}">`);
-    $('.movTitle').prepend(`${action[rndMovieInd].title}`);
+    
 }
