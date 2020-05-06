@@ -4,39 +4,33 @@
       <script src="API_external.js" type="text/javascript"></script>
       <script src="movies.json" type="text/javascript"></script>
       <script>
-          /*var genreArr = [];
-          var movieArr = [];
-          var TD = [];*/
-         
-          $(() => { 
-            //GetGenres(function(result){});
-            //GetMovies(function(result){});
-            //GetTD(function(result){});
-
-              console.log(movies[0]);
+          $(() => {
+            //GetMovies(function(result){}); Blev brugt til at hente filmdata i starten!
               
-             $(".genre").click(function(){
-                 console.log(`[`)
-                 for (var i = 0; i < TD.length; i++) {
-                     console.log(`{
-"title": "${TD[i].results[0].title}", 
-"year": "${TD[i].results[0].year}",
-"synopsis": "${TD[i].results[0].synopsis}",
-"runtime": "${TD[i].results[0].netflixruntime}",
-"genre": "${TD[i].results[0].imdbgenre}",
-"rating": "${TD[i].results[0].imdbrating}",
-"img": "${TD[i].results[0].img}"
-},`);
-                 }
-                 console.log(`]`)
+              /* Funktioner til at teste forskellige ting via knap tryk
+                 Skal ikke bruges i endelig version, men har gjort det nemmere at tjekke forskellige elementer
+                 OBS. film kan hentes ved brug af: movies[0][indexForFilm], hvor index for film er mellem 0 - 99 (inklusivt)
+                 F.eks.: movies[0][4]
+                 Indholdet for film er således:
+                  .title
+                  .year
+                  .synopsis
+                  .runtime (OBS. runtime i sekunder)
+                  .genre
+                  .img (OBS. url adresse til billede)
+                 Benyttes ved brug af: movies[0][indexForFilm].indhold
+                 F.eks.: movies[0][indexForFilm].title
+              */
+             $(".genre").click(function() {
+                console.log();
              });
               
              $(".movie").click(function(){
-                 console.log(movieArr);
+                 console.log();
              });
               
-              $(".TD").click(function(){
-                 console.log(TD);
+             $(".TD").click(function(){
+                 console.log();
              });
           });
     </script>
