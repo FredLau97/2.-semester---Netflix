@@ -1,10 +1,9 @@
-var movieIDArr = [];
-var TD = [];
-var movies = [];
-var url = "";
-var temp = [];
+var movieIDArr = []; // Array til film IDs
+var TD = []; // Array til Title Details for film
+var movies = []; // Array til opbevaring af film fra JSON fil (movies.json)
+var url = "https://unogsng.p.rapidapi.com/title?netflixid="; // URL adresse til brug i API call
 
-// Arrays til de forskellige genre
+// Arrays til de forskellige genre (buffer array til film hvor genre ikke er angivet)
 var documentary = [];
 var drama = [];
 var action = [];
@@ -40,7 +39,7 @@ function GetMovies(callback) {
     
 $.ajax(settings).done(function (response) {
     for(var i = 0; i < response.results.length; i++) {
-        movieIDArr.push(response.results[i].nfid);
+        movieIDArr.push(response.results[i].nfid); // Opbevare kun nfid (netflixid) feltet fra filmen
     }
     GetTitleDetails(callback);
 });
@@ -49,8 +48,7 @@ $.ajax(settings).done(function (response) {
 // Få detaljeret film objekter fra API
 function GetTitleDetails(callback) {
     for (var i = 0; i < movieIDArr.length; i++) {
-        url = "https://unogsng.p.rapidapi.com/title?netflixid="
-        url += movieIDArr[i].toString();
+        url += movieIDArr[i].toString(); // Tilføjer nfid til slutningen af URL adressen til API kaldet
         var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -63,10 +61,14 @@ function GetTitleDetails(callback) {
 	}
 }
 
+$.ajax(settings).done(function (response) {
+    TD.push(response);
+});
 };
 }
 
 // Læs JSON fil med filmobjekter, og tilføj dem til movies (array)
+// Check derefter hver films genre, og tilføj filmen til dens respektive genre array
 $.getJSON("movies.json", function(response) {
     movies.push(response);
     
@@ -123,6 +125,5 @@ $.getJSON("movies.json", function(response) {
     console.log("Adventure:" + adventure);
     console.log("Horror:" + horror);
     console.log("Musical:" + musical);
-    console.log("Buffer:" + buffer);*/
-        
+    console.log("Buffer:" + buffer);*/   
 });
