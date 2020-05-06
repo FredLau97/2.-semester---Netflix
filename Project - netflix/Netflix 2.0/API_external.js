@@ -22,6 +22,30 @@ var horror = [];
 var musical = [];
 var buffer = [];
 
+var allGenres = [documentary, drama, action, comedy, romance, thriller, crime, scifi, anim, family, short, news, sport, adventure, horror, musical, buffer];
+var selectedGenres = [];
+
+//Vælge genre via checkbox INPUT
+function PickGenre(allGenres){
+    
+    for(i=0; i < allGenres.length; i++){
+        if(HTMLInputElement == allGenres[i]){
+            selectedGenres.push(allGenres[i]);
+        }
+        else if(selectedGenres == null){
+            /* You need to select somethin */
+        } 
+    }
+   return selectedGenres; 
+}
+
+function PickMovie(selectedGenres){
+    var randomGenre = selectedGenres[Math.floor(Math.random() * selectedGenres.length)];
+    var randomMovie = randomGenre[Math.floor(Math.random() * randomGenre.length)];
+    return randomMovie;
+}
+
+
 // Hent film ID fra API
 function GetMovies(callback) {
     var settings = {
@@ -109,6 +133,10 @@ $.getJSON("movies.json", function(response) {
             buffer.push(JSON.stringify(movies[0][i]));
     }
     
+  
+    
+
+    
     /*console.log("Documentary:" + documentary);
     console.log("Drama:" + drama);
     console.log("Action:" + action);
@@ -127,3 +155,7 @@ $.getJSON("movies.json", function(response) {
     console.log("Musical:" + musical);
     console.log("Buffer:" + buffer);*/   
 });
+
+
+
+
