@@ -19,6 +19,7 @@
     <script src="API_external.js" type="text/javascript"></script>
     <script src="movies.json" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
         $(() => {
             AddMovies();
@@ -87,9 +88,31 @@
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
         <div class="inline beingWatch">
             <div class="inline">
-                <a href="">
-                    <img href="google.dk" class="moviePoster m-x-auto" src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="">
-                </a>
+                <button type="button" class="modal-button" id="myBtn">
+                    <img class="moviePoster m-x-auto" src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg">
+                </button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header ">
+                                <h4 class="modal-title">Star Wars: Episode I - Den usynlige fjende</h4>
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe width="420" height="315"
+                                        src="https://www.youtube.com/embed/bD7bpG-zDJQ">
+                                </iframe>
+                                <p>Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their old glory.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline">

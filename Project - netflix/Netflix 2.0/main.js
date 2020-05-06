@@ -28,3 +28,10 @@ function GenerateMatch() {
     $('#poster').prepend(`<img class="col-12 movPoster" src="${action[rndMovieInd].img}">`);
     $('#year').prepend(`<p><strong>Årstal:</strong> ${action[rndMovieInd].year}</p>`);
 }
+
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+
+    });
+});

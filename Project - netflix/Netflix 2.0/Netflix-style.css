@@ -55,6 +55,23 @@ body {
 	display: inline-flex;
 }
 
+.modal-button {
+	background: rgba(18,17,17,1.00);
+	border: rgba(18,17,17,1.00);
+	padding: 0px;
+}
+
+.modal-body{
+	background: rgba(18,17,17,1.00);
+	color: white;
+
+}
+
+.modal-exit{
+	color: white;
+
+}
+
 
 
 @media screen and (max-width: 1680px) {
