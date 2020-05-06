@@ -25,6 +25,6 @@ function GenerateMatch() {
     $("#title").prepend(`<h1 class = "whiteText movTitle">${action[rndMovieInd].title}</h1>`);
     $('.movRating').prepend(`<strong>IMDB</strong>: ${action[rndMovieInd].rating} / 10`);
     $('.synopsis').append(`${action[rndMovieInd].synopsis}`);
-    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[rndMovieInd].img}">`);
-    $('.movTitle').prepend(`${action[rndMovieInd].title}`);
+    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[rndMovieInd].img}" style="width: 600px;">`);
+    $('#year').prepend(`<p><strong>Årstal:</strong> ${action[rndMovieInd].year}</p>`);
 }
