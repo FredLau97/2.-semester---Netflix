@@ -34,4 +34,8 @@ $(document).ready(function(){
         $("#myModal").modal();
 
     });
+    $("#myBtn1").click(function(){
+        $("#myModal1").modal();
+
+    });
 });

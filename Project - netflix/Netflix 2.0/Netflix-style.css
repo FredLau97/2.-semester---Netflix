@@ -72,6 +72,15 @@ body {
 
 }
 
+.movieMatch-logo{
+	width: 60px;
+	height: 60px;
+}
+
+.movieMatch-button {
+	background: transparent;
+	border: transparent;
+}
 
 
 @media screen and (max-width: 1680px) {

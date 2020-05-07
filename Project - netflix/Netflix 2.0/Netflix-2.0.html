@@ -57,11 +57,39 @@
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">Min Liste</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="Random.html">Tinder!</a>
-            </li>
         </ul>
         <ul class="navbar-nav ">
+            <li class="nav-item">
+                <button type="button" class="movieMatch-button" id="myBtn1">
+                    <img class="movieMatch-logo" src="Movie%20Match%20Logo.png">
+                </button>
+                <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content modal-body">
+                            <div class="modal-header ">
+                                <h4 class="modal-title">Choose a Genre and start Matching!</h4>
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="dropdown show">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Genre
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Comedy</a>
+                                        <a class="dropdown-item" href="#">Drama</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger">Match!</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <form class="form-inline my-2 my-lg-2">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-danger my-2 my-sm-0 text-white " type="submit">Search</button>
