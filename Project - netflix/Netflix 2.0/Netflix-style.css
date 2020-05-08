@@ -61,9 +61,14 @@ body {
 	padding: 0px;
 }
 
+.modal {
+    overflow: visible;
+}
+
 .modal-body{
 	background: rgba(18,17,17,1.00);
 	color: white;
+    overflow-y: visible;
 
 }
 
