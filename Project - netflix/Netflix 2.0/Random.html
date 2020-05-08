@@ -51,7 +51,16 @@
       </style>
       <script>
         $(() => {
-            GenerateMatch();
+            var currentMovies = [];
+            generateSelection(currentMovies);
+            var movieIndex = Math.floor(Math.random() * currentMovies.length);
+            GenerateMatch(currentMovies, movieIndex);
+            
+            $("#dislikeBtn").click(function() {
+                currentMovies.pop(movieIndex);
+                movieIndex = Math.floor(Math.random() * currentMovies.length);
+                GenerateMatch(currentMovies, movieIndex);
+            });
         });
       </script>
   </head>
@@ -107,7 +116,15 @@
             </ul>
         </div>
     </nav>
-      
+     function GenerateMatch(currentMovies, movieIndex) {
+    
+    
+    $("#title p").html(`<h1 class = "whiteText movTitle">${action[movieIndex].title}</h1>`);
+    $('.movRating').prepend(`<strong>IMDB</strong>: ${action[movieIndex].rating} / 10`);
+    $('.synopsis').append(`${action[movieIndex].synopsis}`);
+    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[movieIndex].img}">`);
+    $('#year').prepend(`<p><strong>Årstal:</strong> ${action[movieIndex].year}</p>`);
+} 
       <div class = "container col-12">
         <div id = "poster" class = "col-8 float-left"> 
             
@@ -115,7 +132,7 @@
 
         <div id = "info" class = "container col-4 float-right"> 
             <div id = "title" class = "row align-self-start"> 
-                
+                <h1></h1>
             </div>
             
             <hr class = "row line">

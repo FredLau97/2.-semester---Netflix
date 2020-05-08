@@ -19,14 +19,22 @@ function AddMovies() {
     }
 }
 
-function GenerateMatch() {
-    var rndMovieInd = Math.floor(Math.random() * action.length);
+function generateSelection(currentMovies) {
+    var selectedGenre = action;
+    for (i = 0; i < movies.length; i++) {
+        currentMovies = action.push(i);
+    }
+    return currentMovies;
+}
+
+function GenerateMatch(currentMovies, movieIndex) {
     
-    $("#title").prepend(`<h1 class = "whiteText movTitle">${action[rndMovieInd].title}</h1>`);
-    $('.movRating').prepend(`<strong>IMDB</strong>: ${action[rndMovieInd].rating} / 10`);
-    $('.synopsis').append(`${action[rndMovieInd].synopsis}`);
-    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[rndMovieInd].img}">`);
-    $('#year').prepend(`<p><strong>Årstal:</strong> ${action[rndMovieInd].year}</p>`);
+    
+    $("#title").prepend(`<h1 class = "whiteText movTitle">${action[movieIndex].title}</h1>`);
+    $('.movRating').prepend(`<strong>IMDB</strong>: ${action[movieIndex].rating} / 10`);
+    $('.synopsis').append(`${action[movieIndex].synopsis}`);
+    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[movieIndex].img}">`);
+    $('#year').prepend(`<p><strong>Årstal:</strong> ${action[movieIndex].year}</p>`);
 }
 
 $(document).ready(function(){
