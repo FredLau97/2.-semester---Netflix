@@ -20,21 +20,20 @@ function AddMovies() {
 }
 
 function generateSelection(currentMovies) {
-    var selectedGenre = action;
     for (i = 0; i < movies.length; i++) {
-        currentMovies = action.push(i);
+        currentMovies.push(movies[i]);
     }
     return currentMovies;
 }
 
 function GenerateMatch(currentMovies, movieIndex) {
     
-    
-    $("#title").prepend(`<h1 class = "whiteText movTitle">${action[movieIndex].title}</h1>`);
-    $('.movRating').prepend(`<strong>IMDB</strong>: ${action[movieIndex].rating} / 10`);
-    $('.synopsis').append(`${action[movieIndex].synopsis}`);
-    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[movieIndex].img}">`);
-    $('#year').prepend(`<p><strong>Årstal:</strong> ${action[movieIndex].year}</p>`);
+    console.log(movieIndex);
+    $("#title h1").html(`<h1 class = "whiteText">${currentMovies[movieIndex].title}</h1>`);
+    $('#rating p').html(`<p><strong>IMDB</strong>: ${currentMovies[movieIndex].rating} / 10</p>`);
+    $('#description p').html(`<p><strong>Beskrivelse:</strong> ${currentMovies[movieIndex].synopsis}</p>`);
+    $('#poster').html(`<img class="col-12 movPoster" src="${currentMovies[movieIndex].img}">`);
+    $('#year p').html(`<p><strong>Årstal:</strong> ${currentMovies[movieIndex].year}</p>`);
 }
 
 $(document).ready(function(){

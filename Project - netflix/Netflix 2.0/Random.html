@@ -50,7 +50,7 @@
                 
       </style>
       <script>
-        $(() => {
+        $(() => {         
             var currentMovies = [];
             generateSelection(currentMovies);
             var movieIndex = Math.floor(Math.random() * currentMovies.length);
@@ -116,18 +116,10 @@
             </ul>
         </div>
     </nav>
-     function GenerateMatch(currentMovies, movieIndex) {
-    
-    
-    $("#title p").html(`<h1 class = "whiteText movTitle">${action[movieIndex].title}</h1>`);
-    $('.movRating').prepend(`<strong>IMDB</strong>: ${action[movieIndex].rating} / 10`);
-    $('.synopsis').append(`${action[movieIndex].synopsis}`);
-    $('#poster').prepend(`<img class="col-12 movPoster" src="${action[movieIndex].img}">`);
-    $('#year').prepend(`<p><strong>Årstal:</strong> ${action[movieIndex].year}</p>`);
-} 
+      
       <div class = "container col-12">
         <div id = "poster" class = "col-8 float-left"> 
-            
+            <img>
         </div>
 
         <div id = "info" class = "container col-4 float-right"> 
@@ -139,18 +131,18 @@
             
             <div id = "textBox" class = "row align-self-center">
                 <div id = "rating" class = "whiteText"> 
-                    <p class="movRating">
+                    <p>
                     
                     </p>
                 </div>
                   
                 <div id = "description" class = "whiteText"> 
-                    <p class="synopsis">
-                    <strong>Beskrivelse:</strong>
+                    <p>
+                    
                     </p>
                 </div>
                 <div id = "year" class = "whiteText">
-                    
+                    <p> </p>
                 </div>
                 <hr class = "line">
               
