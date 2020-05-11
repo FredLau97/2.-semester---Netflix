@@ -49,8 +49,8 @@ function AddMovies() {
     }
 }
 
-function generateSelection(currentMovies) {
-    for (i = 0; i < movies.length; i++) {
+function generateSelection(currentMovies, genre) {
+    for (i = 0; i < genre.length; i++) {
         currentMovies.push(movies[i]);
     }
     return currentMovies;
@@ -59,25 +59,13 @@ function generateSelection(currentMovies) {
 function GenerateMatch(currentMovies, movieIndex) {
     
     console.log(movieIndex);
+    console.log(currentMovies[movieIndex].genre);
     $("#title h1").html(`<h1 class = "whiteText">${currentMovies[movieIndex].title}</h1>`);
     $('#rating p').html(`<p><strong>IMDB</strong>: ${currentMovies[movieIndex].rating} / 10</p>`);
     $('#description p').html(`<p><strong>Beskrivelse:</strong> ${currentMovies[movieIndex].synopsis}</p>`);
     $('#poster').html(`<img class="col-12 movPoster" src="${currentMovies[movieIndex].img}">`);
     $('#year p').html(`<p><strong>Årstal:</strong> ${currentMovies[movieIndex].year}</p>`);
 }
-
-$(() => {
-    var currentMovies = [];
-    generateSelection(currentMovies);
-    var movieIndex = Math.floor(Math.random() * currentMovies.length);
-    GenerateMatch(currentMovies, movieIndex);
-
-    $("#dislikeBtn").click(function() {
-        currentMovies.pop(movieIndex);
-        movieIndex = Math.floor(Math.random() * currentMovies.length);
-        GenerateMatch(currentMovies, movieIndex);
-    });
-});
 
 function ModalButtons() {
     //Being watched MODALS FUNCTIONALITY

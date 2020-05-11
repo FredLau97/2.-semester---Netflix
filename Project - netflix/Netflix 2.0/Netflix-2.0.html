@@ -30,6 +30,24 @@
         $(() => {
             AddMovies();
             ModalButtons();
+            
+            var currentMovies = [];
+            var movieIndex = 0;
+        
+            $("#dislikeBtn").click(function() {
+                currentMovies.pop(movieIndex);
+                movieIndex = Math.floor(Math.random() * currentMovies.length);
+                GenerateMatch(currentMovies, movieIndex);
+            });
+            
+            $("#submitBtn").click(function() {
+                var genreForm = document.getElementById("genreForm");
+                var result = genreForm.options[genreForm.selectedIndex].value;
+                generateSelection(currentMovies, result);
+                movieIndex = Math.floor(Math.random() * currentMovies.length);
+                GenerateMatch(currentMovies, movieIndex);
+                $("#randomModal").modal();
+            });            
         });
     </script>
 
@@ -78,10 +96,10 @@
                                 <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body info">
-                               <form onsubmit="GenerateMatch()">
+                               <form>
                                    <div class="form-group">
                                         <label for="exampleFormControlSelect1">Example select</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="genreForm">
                                             <option value="documentary">Documentary</option>
                                             <option value="drama">Drama</option>
                                             <option value="action">Action</option>
@@ -102,9 +120,6 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#randomModal" id="randomBtn">
-                                    Match
-                                </button>
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="randomModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -161,7 +176,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-danger">Match!</button>
+                                <button type="submit" id = "submitBtn" class="btn btn-danger">Match!</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </div>
