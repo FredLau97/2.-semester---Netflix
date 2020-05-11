@@ -49,9 +49,9 @@ function AddMovies() {
     }
 }
 
-function generateSelection(currentMovies, genre) {
-    for (i = 0; i < genre.length; i++) {
-        currentMovies.push(movies[i]);
+function generateSelection(currentMovies, genreArray) {
+    for (i = 0; i < genreArray.length; i++) {
+        currentMovies.push(genreArray[i]);
     }
     return currentMovies;
 }
