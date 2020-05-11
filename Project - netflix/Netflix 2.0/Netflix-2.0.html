@@ -78,32 +78,93 @@
                                 <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body info">
-                                <div class="dropdown show">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Genre
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Comedy</a>
-                                        <a class="dropdown-item" href="#">Drama</a>
-                                        <a class="dropdown-item" href="#">Documentary</a>
-                                        <a class="dropdown-item" href="#">Romance</a>
-                                        <a class="dropdown-item" href="#">Thriller</a>
-                                        <a class="dropdown-item" href="#">Crime</a>
-                                        <a class="dropdown-item" href="#">Sci-Fi</a>
-                                        <a class="dropdown-item" href="#">Animated</a>
-                                        <a class="dropdown-item" href="#">Family</a>
-                                        <a class="dropdown-item" href="#">Short</a>
-                                        <a class="dropdown-item" href="#">News</a>
-                                        <a class="dropdown-item" href="#">Sport</a>
-                                        <a class="dropdown-item" href="#">Adventure</a>
-                                        <a class="dropdown-item" href="#">Horror</a>
-                                        <a class="dropdown-item" href="#">Musical</a>
-                                    </div>
-                                </div>
+                               <form onsubmit="GenerateMatch()">
+                                   <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Example select</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <option value="documentary">Documentary</option>
+                                            <option value="drama">Drama</option>
+                                            <option value="action">Action</option>
+                                            <option value="comedy">Comedy</option>
+                                            <option value="romance">Romance</option>
+                                            <option value="thriller">Thriller</option>
+                                            <option value="crime">Crime</option>
+                                            <option value="scifi">Sci-Fi</option>
+                                            <option value="anim">Animated</option>
+                                            <option value="short">Short</option>
+                                            <option value="news">News</option>
+                                            <option value="sport">Sport</option>
+                                            <option value="adventure">Adventure</option>
+                                            <option value="horror">Horror</option>
+                                            <option value="musical">Musical</option>
+                                       </select>
+                                   </div>
+                                </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger">Match!</button>
+<<<<<<< HEAD
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#randomModal" id="randomBtn">
+                                    Match
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="randomModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-Windows modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header modal-body">
+                                                <div id = "title" class = "row align-self-start">
+                                                <h1></h1>
+                                                </div>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class = "container col-12">
+                                                    <div id = "poster" class = "col-8 float-left">
+                                                        <img>
+                                                    </div>
+
+                                                    <div id = "info" class = "container col-4 float-right">
+
+
+                                                        <hr class = "row line">
+
+                                                        <div id = "textBox" class = "row align-self-center">
+                                                            <div id = "rating" class = "whiteText">
+                                                                <p>
+
+                                                                </p>
+                                                            </div>
+
+                                                            <div id = "description" class = "whiteText">
+                                                                <p>
+
+                                                                </p>
+                                                            </div>
+                                                            <div id = "year" class = "whiteText">
+                                                                <p> </p>
+                                                            </div>
+                                                            <hr class = "line">
+
+                                                        </div>
+                                                        <hr class = "row line">
+                                                        <div id = "buttons" class = "row align-self-end container">
+                                                            <button id = "playBtn" class = "btn-success col-4 choiceBtn" type = "button">Play</button>
+                                                            <button id = "listBtn" class = "btn-primary col-4 choiceBtn" type = "button">List</button>
+                                                            <button id = "dislikeBtn" class = "btn-danger col-4 choiceBtn" type = "button">Nope</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer modal-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+=======
+                                <button type="submit" class="btn btn-danger">Match!</button>
+>>>>>>> master
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </div>

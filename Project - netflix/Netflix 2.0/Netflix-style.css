@@ -87,6 +87,42 @@ body {
 	border: transparent;
 }
 
+.whiteText {
+	color: white;
+}
+
+.centered {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.choiceBtn {
+	height: 70px;
+	font-size: 2em;
+}
+
+.line {
+	background-color: white;
+	border-style: solid;
+}
+
+.movPoster {
+	max-height: inherit;
+	max-width: inherit;
+
+}
+
+#poster {
+	text-align: center;
+}
+
+.modal-Windows {
+	width: 1500px;
+	height: 10px;
+	margin: 1.75rem auto;
+}
+
 
 @media screen and (max-width: 1680px) {
 	#logo {
