@@ -49,9 +49,11 @@ function AddMovies() {
     }
 }
 
-function generateSelection(currentMovies, genreArray) {
-    for (i = 0; i < genreArray.length; i++) {
-        currentMovies.push(genreArray[i]);
+function generateSelection(currentMovies, genre) {
+    for (i = 0; i < movies.length; i++) {
+        if (movies[i].genre.includes(genre)) {
+             currentMovies.push(movies[i]);       
+        }
     }
     return currentMovies;
 }
@@ -59,7 +61,7 @@ function generateSelection(currentMovies, genreArray) {
 function GenerateMatch(currentMovies, movieIndex) {
     
     console.log(movieIndex);
-    console.log(currentMovies[movieIndex].genre);
+    console.log(currentMovies[movieIndex]);
     $("#title h1").html(`<h1 class = "whiteText">${currentMovies[movieIndex].title}</h1>`);
     $('#rating p').html(`<p><strong>IMDB</strong>: ${currentMovies[movieIndex].rating} / 10</p>`);
     $('#description p').html(`<p><strong>Beskrivelse:</strong> ${currentMovies[movieIndex].synopsis}</p>`);
