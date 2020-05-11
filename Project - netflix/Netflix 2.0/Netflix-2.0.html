@@ -35,7 +35,7 @@
             var movieIndex = 0;
         
             $("#dislikeBtn").click(function() {
-                currentMovies.pop(movieIndex);
+                currentMovies.splice(movieIndex, movieIndex + 1);
                 movieIndex = Math.floor(Math.random() * currentMovies.length);
                 GenerateMatch(currentMovies, movieIndex);
             });
