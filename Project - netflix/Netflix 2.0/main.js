@@ -60,14 +60,23 @@ function generateSelection(currentMovies, genre) {
 
 function GenerateMatch(currentMovies, movieIndex) {
     
-    console.log(movieIndex);
-    console.log(currentMovies[movieIndex]);
-    $("#title h1").html(`<h1 class = "whiteText">${currentMovies[movieIndex].title}</h1>`);
-    $('#rating p').html(`<p><strong>IMDB</strong>: ${currentMovies[movieIndex].rating} / 10</p>`);
-    $('#genreText p').html(`<p><strong>Genre:</strong> ${currentMovies[movieIndex].genre}</p>`);
-    $('#description p').html(`<p><strong>Beskrivelse:</strong> ${currentMovies[movieIndex].synopsis}</p>`);
-    $('#poster').html(`<img class="col-12 movPoster" src="${currentMovies[movieIndex].img}">`);
-    $('#year p').html(`<p><strong>Årstal:</strong> ${currentMovies[movieIndex].year}</p>`);
+    if (currentMovies.length > 0) {
+        $("#title h1").html(`<h1 class = "whiteText">${currentMovies[movieIndex].title}</h1>`);
+        $('#rating p').html(`<p><strong>IMDB</strong>: ${currentMovies[movieIndex].rating} / 10</p>`);
+        $('#genreText p').html(`<p><strong>Genre:</strong> ${currentMovies[movieIndex].genre}</p>`);
+        $('#description p').html(`<p><strong>Beskrivelse:</strong> ${currentMovies[movieIndex].synopsis}</p>`);
+        $('#poster').html(`<img class="col-12 movPoster" src="${currentMovies[movieIndex].img}">`);
+        $('#year p').html(`<p><strong>Årstal:</strong> ${currentMovies[movieIndex].year}</p>`);  
+    }
+    else {
+        $("#title h1").html(`No More Movies Left`);
+        $('#rating p').html(`<p></p>`);
+        $('#genreText p').html(`<p></p>`);
+        $('#description p').html(`<p>There are currently no more movies left within these parameters.`);
+        $('#poster').html(`<img class="col-12 movPoster" src="Movie%20Match%20Logo.png">`);
+        $('#year p').html(`<p></p>`);  
+    }
+    
 }
 
 function ModalButtons() {
