@@ -37,7 +37,11 @@ body {
 	height: 364px;
 	margin-right: 2px;
 	margin-left: 2px;
+	border: solid transparent;
+	transition: border-width 0.2s linear;
 }
+
+.moviePoster:hover { border-width: 10px; }
 
 .genreHeadlines{
 	margin-left: 60px;
@@ -93,6 +97,12 @@ body {
 
 }
 
+.exit-Size {
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
+}
+
 .whiteText {
 	color: white;
 }
@@ -125,7 +135,6 @@ body {
 
 .modal-Windows {
 	width: 1500px;
-	height: 10px;
 	margin: 1.75rem auto;
 }
 
