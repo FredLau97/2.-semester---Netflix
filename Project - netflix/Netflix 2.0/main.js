@@ -178,6 +178,9 @@ function ModalButtons() {
 
     $("#myBtn1").click(function () { 
         $("#myModal1").modal(); 
-    })
+    });
 
+    $("#abc").click(function () {
+        $("div").removeClass("modal-backdrop");
+     });
 }
