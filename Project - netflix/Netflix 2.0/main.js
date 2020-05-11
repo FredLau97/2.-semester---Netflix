@@ -13,7 +13,7 @@ function AddMovies() {
         
         $(watchMovies[i]).find(`.title`).prepend(`<h4 class="modal-title"> ${watchData[i].title} </h4>`);
         
-        $(watchMovies[i]).find(`.info`).prepend(`<p>${watchData[i].synopsis}</p>`);
+        $(watchMovies[i]).find(`.info`).prepend(`<br><p>${watchData[i].synopsis}</p>`);
         
         $(watchMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${watchData[i].img}" alt="">`);
     }
@@ -23,7 +23,7 @@ function AddMovies() {
         
         $(actionMovies[i]).find(`.title`).prepend(`<h4 class="modal-title"> ${actionData[i].title} </h4>`);
         
-        $(actionMovies[i]).find(`.info`).prepend(`<p>${actionData[i].synopsis}</p>`);
+        $(actionMovies[i]).find(`.info`).prepend(`<br><p>${actionData[i].synopsis}</p>`);
         
         $(actionMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${actionData[i].img}" alt="">`);
     }
@@ -33,7 +33,7 @@ function AddMovies() {
         
         $(docMovies[i]).find(`.title`).prepend(`<h4 class="modal-title"> ${docData[i].title} </h4>`);
         
-        $(docMovies[i]).find(`.info`).prepend(`<p>${docData[i].synopsis}</p>`);
+        $(docMovies[i]).find(`.info`).prepend(`<br><p>${docData[i].synopsis}</p>`);
         
         $(docMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${docData[i].img}" alt="">`);
     }
@@ -43,7 +43,7 @@ function AddMovies() {
         
         $(thrillerMovies[i]).find(`.title`).prepend(`<h4 class="modal-title"> ${thrillerData[i].title} </h4>`);
         
-        $(thrillerMovies[i]).find(`.info`).prepend(`<p>${thrillerData[i].synopsis}</p>`);
+        $(thrillerMovies[i]).find(`.info`).prepend(`<br><p>${thrillerData[i].synopsis}</p>`);
         
         $(thrillerMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${thrillerData[i].img}" alt="">`);
     }
@@ -166,4 +166,9 @@ function ModalButtons() {
     $(".thrlBtn6").click(function(){
         $(".thrlModal6").modal();
     });
+    
+    //MOVIE MATCH MODAL
+    $("#myBtn1").click(function () { 
+        $("#myModal1").modal(); 
+    })
 }
