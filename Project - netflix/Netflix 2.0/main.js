@@ -179,7 +179,6 @@ function ModalButtons() {
     $(".thrlBtn6").click(function(){
         $(".thrlModal6").modal();
     });
-<<<<<<< HEAD
 
     $("#myBtn1").click(function () {
         $("#myModal1").modal();
@@ -189,13 +188,8 @@ function ModalButtons() {
         $("#myModal1").modal();
     });
 
-    $("#randomBtn").click(function () {
-    });
-=======
-    
-    //MOVIE MATCH MODAL
     $("#myBtn1").click(function () { 
         $("#myModal1").modal(); 
     })
->>>>>>> master
+
 }
