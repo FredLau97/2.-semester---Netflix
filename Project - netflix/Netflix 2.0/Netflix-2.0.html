@@ -78,31 +78,31 @@
                                 <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body info">
-                               <form>
+                               <form onsubmit="GenerateMatch()">
                                    <div class="form-group">
                                         <label for="exampleFormControlSelect1">Example select</label>
-                                       <select class="form-control" id="exampleFormControlSelect1">
-                                           <option>Documentary</option>
-                                            <option>Drama</option>
-                                            <option>Action</option>
-                                           <option>Comedy</option>
-                                            <option>Romance</option>
-                                           <option>Thriller</option>
-                                            <option>Crime</option>
-                                            <option>Sci-Fi</option>
-                                           <option>Animated</option>
-                                           <option>Short</option>
-                                             <option>News</option>
-                                            <option>Sport</option>
-                                           <option>Adventure</option>
-                                           <option>Horror</option>
-                                           <option>Musical</option>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <option value="documentary">Documentary</option>
+                                            <option value="drama">Drama</option>
+                                            <option value="action">Action</option>
+                                            <option value="comedy">Comedy</option>
+                                            <option value="romance">Romance</option>
+                                            <option value="thriller">Thriller</option>
+                                            <option value="crime">Crime</option>
+                                            <option value="scifi">Sci-Fi</option>
+                                            <option value="anim">Animated</option>
+                                            <option value="short">Short</option>
+                                            <option value="news">News</option>
+                                            <option value="sport">Sport</option>
+                                            <option value="adventure">Adventure</option>
+                                            <option value="horror">Horror</option>
+                                            <option value="musical">Musical</option>
                                        </select>
                                    </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger">Match!</button>
+                                <button type="submit" class="btn btn-danger">Match!</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </div>
