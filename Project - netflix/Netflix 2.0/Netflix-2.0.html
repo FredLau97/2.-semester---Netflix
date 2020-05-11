@@ -29,6 +29,7 @@
     <script>
         $(() => {
             AddMovies();
+            ModalButtons();
         });
     </script>
 
@@ -72,11 +73,11 @@
                 <div class="modal fade" id="myModal1" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content modal-body">
-                            <div class="modal-header ">
+                            <div class="modal-header">
                                 <h4 class="modal-title">Choose a Genre and start Matching!</h4>
                                 <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body info">
                                 <div class="dropdown show">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Genre
@@ -129,29 +130,28 @@
     </div>
 </nav>
 
+
 <div class="container-fluid container-space">
     <h2 class="genreHeadlines">Det bliver der set</h2>
     <div class="inline">
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
         <div class="inline beingWatch">
-            <div class="inline">
-                <button type="button" class="modal-button" id="myBtn">
-                    <img class="moviePoster m-x-auto" src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg">
+            <div class="inline watch">
+                <button type="button" class="modal-button watchBtn1">
+                    
                 </button>
-                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal fade watchModal1" role="dialog">
                     <div class="modal-dialog">
 
-                        <!-- Modal content-->
+                    <!-- Modal content-->
                         <div class="modal-content modal-body">
-                            <div class="modal-header ">
-                                <h4 class="modal-title">Star Wars: Episode I - Den usynlige fjende</h4>
+                            <div class="modal-header title">
+                                
                                 <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
-                                <iframe width="420" height="315"
-                                        src="https://www.youtube.com/embed/bD7bpG-zDJQ">
-                                </iframe>
-                                <p>Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their old glory.</p>
+                            <div class="modal-body info">
+                                
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
@@ -162,34 +162,134 @@
                 </div>
             </div>
 
-            <div class="inline">
-                <a href="">
-                    <img class="moviePoster m-x-auto d-none d-sm-block" src="https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg" alt="">
-                </a>
+            <div class="inline watch">
+                <button type="button" class="modal-button watchBtn2">
+                    
+                </button>
+                <div class="modal fade watchModal2" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="inline">
-                <a href="">
-                    <img class="moviePoster m-x-auto d-none d-md-block" src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SY1000_SX750_AL_.jpg" alt="">
-                </a>
+            <div class="inline watch">
+                <button type="button" class="modal-button watchBtn3">
+                    
+                </button>
+                <div class="modal fade watchModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="inline">
-                <a href="">
-                    <img class="moviePoster m-x-auto d-none d-lg-block" src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,643,1000_AL_.jpg" alt="">
-                </a>
+            <div class="inline watch">
+                <button type="button" class="modal-button watchBtn4">
+                    
+                </button>
+                <div class="modal fade watchModal4" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="inline">
-                <a href="">
-                    <img class="moviePoster m-x-auto d-none d-xl-block" src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,641,1000_AL_.jpg" alt="">
-                </a>
+            <div class="inline watch">
+                <button type="button" class="modal-button watchBtn5">
+                    
+                </button>
+                <div class="modal fade watchModal5" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="inline">
-                <a href="">
-                    <img class="moviePoster m-x-auto d-none d-xl-block" src="https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY999_CR0,0,644,999_AL_.jpg" alt="">
-                </a>
+            <div class="inline watch">
+                <button type="button" class="modal-button watchBtn6">
+                    
+                </button>
+                <div class="modal fade watchModal6" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
@@ -202,27 +302,159 @@
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
         <div class="inline actionMovie">
             <div class="inline action">
-                
+                <button type="button" class="modal-button actBtn1">
+                    
+                </button>
+                <div class="modal fade actModal1" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline action">
-                
+                <button type="button" class="modal-button actBtn2">
+                    
+                </button>
+                <div class="modal fade actModal2" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline action">
-                
+                <button type="button" class="modal-button actBtn3">
+                    
+                </button>
+                <div class="modal fade actModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline action">
-                
+                <button type="button" class="modal-button actBtn4">
+                    
+                </button>
+                <div class="modal fade actModal4" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline action">
-                
+                <button type="button" class="modal-button actBtn5">
+                    
+                </button>
+                <div class="modal fade actModal5" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline action">
-                
+                <button type="button" class="modal-button actBtn6">
+                    
+                </button>
+                <div class="modal fade actModal6" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
@@ -235,27 +467,159 @@
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
         <div class="inline docMovie">
             <div class="inline doc">
-                
+                <button type="button" class="modal-button docBtn1">
+                    
+                </button>
+                <div class="modal fade docModal1" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inline doc">
+                <button type="button" class="modal-button docBtn2">
+                    
+                </button>
+                <div class="modal fade docModal2" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inline doc">
+                <button type="button" class="modal-button docBtn3">
+                    
+                </button>
+                <div class="modal fade docModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline doc">
-                
+                <button type="button" class="modal-button docBtn4">
+                    
+                </button>
+                <div class="modal fade docModal4" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline doc">
-                
+                <button type="button" class="modal-button docBtn5">
+                    
+                </button>
+                <div class="modal fade docModal5" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline doc">
-                
-            </div>
+                <button type="button" class="modal-button docBtn6">
+                    
+                </button>
+                <div class="modal fade docModal6" role="dialog">
+                    <div class="modal-dialog">
 
-            <div class="inline doc">
-                
-            </div>
-
-            <div class="inline doc">
-                
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
@@ -266,34 +630,167 @@
     <h2 class="genreHeadlines">Thriller</h2>
     <div class="inline">
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
-        <div class="inline thirllerMovie">
+        <div class="inline thrillerMovie">
             <div class="inline thriller">
-                
+                <button type="button" class="modal-button thrlBtn1">
+                    
+                </button>
+                <div class="modal fade thrlModal1" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline thriller">
-                
+                <button type="button" class="modal-button thrlBtn2">
+                    
+                </button>
+                <div class="modal fade thrlModal2" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline thriller">
-                
+                <button type="button" class="modal-button thrlBtn3">
+                    
+                </button>
+                <div class="modal fade thrlModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline thriller">
-                
+                <button type="button" class="modal-button thrlBtn4">
+                    
+                </button>
+                <div class="modal fade thrlModal4" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline thriller">
-                
+                <button type="button" class="modal-button thrlBtn5">
+                    
+                </button>
+                <div class="modal fade thrlModal5" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="inline thriller">
-                
+                <button type="button" class="modal-button thrlBtn6">
+                    
+                </button>
+                <div class="modal fade thrlModal6" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
     </div>
 </div>
+
 
 </body>
 
