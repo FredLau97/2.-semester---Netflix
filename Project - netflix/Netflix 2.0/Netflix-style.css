@@ -4,24 +4,39 @@
 body {
 	background: rgba(18,17,17,1.00);
 }
-
+/*Nav bar */
 #logo {
 	margin-right: 5px;
 	margin-left: 60px;
 }
+
+.dropdown-menuPo{
+	margin-right: 90px;
+}
+
+.profil-logo{
+	position: relative;
+	margin-left: 10px;
+}
+
+
+.movieMatch-logo{
+	width: 60px;
+	height: 60px;
+}
+
+.movieMatch-button {
+	background: transparent;
+	border: transparent;
+}
+
+/* Start side bars */
 
 .moviePoster {
 	width: 280px;
 	height: 364px;
 	margin-right: 2px;
 	margin-left: 2px;
-	transition: width, height 1s;
-
-}
-
-.moviePoster:hover{
-	height: 384px;
-
 }
 
 .genreHeadlines{
@@ -38,21 +53,22 @@ body {
 	margin-right: 65px;
 }
 
-.dropdown-menuPo{
-	margin-right: 90px;
-}
-
-.profil-logo{
-	position: relative;
-	margin-left: 10px;
-}
-
 .container-space{
 	margin-bottom: 30px;
 }
 
 .inline{
 	display: inline-flex;
+}
+
+/*modals classes */
+
+.modal-Poster{
+	width: 280px;
+	height: 364px;
+	position: center;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
 .modal-button {
@@ -75,16 +91,6 @@ body {
 .modal-exit{
 	color: white;
 
-}
-
-.movieMatch-logo{
-	width: 60px;
-	height: 60px;
-}
-
-.movieMatch-button {
-	background: transparent;
-	border: transparent;
 }
 
 .whiteText {

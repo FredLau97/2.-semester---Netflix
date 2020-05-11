@@ -15,7 +15,7 @@ function AddMovies() {
         
         $(watchMovies[i]).find(`.info`).prepend(`<br><p>${watchData[i].synopsis}</p>`);
         
-        $(watchMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${watchData[i].img}" alt="">`);
+        $(watchMovies[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${watchData[i].img}" alt="">`);
     }
 
     for(var i = 0; i < actionMovies.length; i++){
@@ -25,7 +25,7 @@ function AddMovies() {
         
         $(actionMovies[i]).find(`.info`).prepend(`<br><p>${actionData[i].synopsis}</p>`);
         
-        $(actionMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${actionData[i].img}" alt="">`);
+        $(actionMovies[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${actionData[i].img}" alt="">`);
     }
     
     for(var i = 0; i < docMovies.length; i++) {
@@ -35,7 +35,7 @@ function AddMovies() {
         
         $(docMovies[i]).find(`.info`).prepend(`<br><p>${docData[i].synopsis}</p>`);
         
-        $(docMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${docData[i].img}" alt="">`);
+        $(docMovies[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${docData[i].img}" alt="">`);
     }
     
     for(var i = 0; i < thrillerMovies.length; i++) {
@@ -45,7 +45,7 @@ function AddMovies() {
         
         $(thrillerMovies[i]).find(`.info`).prepend(`<br><p>${thrillerData[i].synopsis}</p>`);
         
-        $(thrillerMovies[i]).find(`.info`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${thrillerData[i].img}" alt="">`);
+        $(thrillerMovies[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${thrillerData[i].img}" alt="">`);
     }
 }
 
