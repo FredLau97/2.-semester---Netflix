@@ -116,6 +116,7 @@ body {
 .choiceBtn {
 	height: 70px;
 	font-size: 2em;
+    margin: 0px 0px 0px 0px;
 }
 
 .line {

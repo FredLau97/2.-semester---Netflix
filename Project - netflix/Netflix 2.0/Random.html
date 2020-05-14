@@ -16,53 +16,6 @@
       
     <link rel="stylesheet" type="text/css" href="Netflix-style.css">
 
-      <style>
-          
-          .whiteText {
-              color: white;
-          }
-          
-          .centered {
-             float: none;
-             margin-left: auto;
-             margin-right: auto;
-          }
-          
-          .choiceBtn {
-              height: 70px;
-              font-size: 2em;
-          }
-          
-          .line {
-              background-color: white;
-              border-style: solid;
-          }
-          
-          .movPoster {
-              max-height: inherit;
-              max-width: inherit;
-              
-          }
-          
-          #poster {
-              text-align: center;
-          }
-                
-      </style>
-      <script>
-        $(() => {         
-            var currentMovies = [];
-            generateSelection(currentMovies);
-            var movieIndex = Math.floor(Math.random() * currentMovies.length);
-            GenerateMatch(currentMovies, movieIndex);
-            
-            $("#dislikeBtn").click(function() {
-                currentMovies.pop(movieIndex);
-                movieIndex = Math.floor(Math.random() * currentMovies.length);
-                GenerateMatch(currentMovies, movieIndex);
-            });
-        });
-      </script>
   </head>
   <body>
       <nav class="navbar navbar-expand-lg bg-transparent">

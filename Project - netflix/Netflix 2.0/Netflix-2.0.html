@@ -48,7 +48,11 @@
                 movieIndex = Math.floor(Math.random() * currentMovies.length);
                 GenerateMatch(currentMovies, movieIndex);
                 $("#randomModal").modal();
-            });            
+            }); 
+            
+            $("#closeRandom").click(function() {
+                currentMovies = [];
+            });
         });
     </script>
 
@@ -123,70 +127,75 @@
                             <div class="modal-footer">
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="randomModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog-centered modal-Windows" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header modal-body">
-                                                <div id = "title" class = "row align-self-start">
-                                                <h1></h1>
-                                                </div>
-                                                <button type="button" class="close whiteText" data-dismiss="modal" aria-label="Close" id="abc">
-                                                    <span aria-hidden="true" class="exit-Size">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class = "container col-12">
-                                                    <div id = "poster" class = "col-8 float-left">
-                                                        <img>
-                                                    </div>
+                                
+                                <button type="submit" id = "submitBtn" class="btn btn-danger" data-dismiss="modal">Match!</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="randomModal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header modal-body">
+                                <div id = "title" class = "row align-self-start">
+                                <h1></h1>
+                                </div>
+                                <button type="button" class="close whiteText" data-dismiss="modal" aria-label="Close" id="closeRandom">
+                                    <span aria-hidden="true" class="exit-Size">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class = "container col-12">
+                                    <div id = "poster" class = "col-7 float-left">
+                                        <img>
+                                    </div>
 
-                                                    <div id = "info" class = "container col-4 float-right">
+                                    <div id = "info" class = "container col-5 float-right">
 
 
-                                                        <hr class = "row line">
+                                        <hr class = "row line">
 
-                                                        <div id = "textBox" class = "row align-self-center">
-                                                            <div id = "rating" class = "whiteText col-12">
-                                                                <p>
+                                        <div id = "rating" class = "whiteText col-12">
+                                            <p>
 
-                                                                </p>
-                                                            </div>
-                                                            
-                                                            <div id = "year" class = "whiteText col-12">
-                                                                <p> </p>
-                                                            </div>
-                                                            
-                                                            <div id = "genreText" class = "whiteText col-12">
-                                                                <p>
-
-                                                                </p>
-                                                            </div>
-                                                            
-                                                            <div id = "description" class = "whiteText col-12">
-                                                                <p>
-
-                                                                </p>
-                                                            </div>
-                                                                                                                    
-                                                            <hr class = "line">
-
-                                                        </div>
-                                                        <hr class = "line col-12">
-                                                        <div id = "buttons" class = "row align-self-end container">
-                                                            <button id = "playBtn" class = "btn-success col-4 choiceBtn" type = "button">Play</button>
-                                                            <button id = "listBtn" class = "btn-primary col-4 choiceBtn" type = "button">List</button>
-                                                            <button id = "dislikeBtn" class = "btn-danger col-4 choiceBtn" type = "button">Nope</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer modal-body">
-                                            </div>
+                                            </p>
                                         </div>
+                                        
+                                        <hr class = "line col-12">
+                                        
+                                        <div id = "year" class = "whiteText col-12">
+                                            <p> </p>
+                                        </div>
+                                        
+                                        <hr class = "line col-12">
+                                        
+                                        <div id = "genreText" class = "whiteText col-12">
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                        
+                                        <hr class = "line col-12">
+                                        
+                                        <div id = "description" class = "whiteText col-12">
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                        
+                                        <hr class = "line col-12">
+                                        
+                                        <div id = "buttons" class = "col-12">
+                                            <button id = "playBtn" class = "float-left btn-success choiceBtn col-4" type = "button">Play</button>
+                                            <button id = "listBtn" class = "float-none btn-primary choiceBtn col-4" type = "button">List</button>
+                                            <button id = "dislikeBtn" class = "float-right btn-danger choiceBtn col-4" type = "button">Nope</button>
+                                        </div>
+                                        
                                     </div>
                                 </div>
-                                <button type="submit" id = "submitBtn" class="btn btn-danger">Match!</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                            <div class="modal-footer modal-body">
                             </div>
                         </div>
                     </div>
