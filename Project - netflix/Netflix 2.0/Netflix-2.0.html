@@ -88,119 +88,116 @@
                 <a class="nav-link text-white" href="myList.html">Min Liste</a>
             </li>
         </ul>
-        <ul class="navbar-nav ">
-            <li class="nav-item">
-                <button type="button" class="movieMatch-button" id="myBtn1">
-                    <img class="movieMatch-logo" src="Movie%20Match%20Logo.png">
-                </button>
-                <div class="modal fade" id="myModal1" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content modal-body">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Choose a Genre and start Matching!</h4>
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body info">
-                               <form>
-                                   <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Example select</label>
-                                            <select class="form-control" id="genreForm">
-                                            <option value="Documentary">Documentary</option>
-                                            <option value="Drama">Drama</option>
-                                            <option value="Action">Action</option>
-                                            <option value="Comedy">Comedy</option>
-                                            <option value="Romance">Romance</option>
-                                            <option value="Thriller">Thriller</option>
-                                            <option value="Crime">Crime</option>
-                                            <option value="Sci-fi">Sci-Fi</option>
-                                            <option value="Animation">Animated</option>
-                                            <option value="Short">Short</option>
-                                            <option value="News">News</option>
-                                            <option value="Sport">Sport</option>
-                                            <option value="Adventure">Adventure</option>
-                                            <option value="Horror">Horror</option>
-                                            <option value="Musical">Musical</option>
-                                       </select>
-                                   </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
+        <div class="movieMatch-Pos">
+            <button type="button" class="movieMatch-button" id="myBtn1">
+                <img class="movieMatch-logo" src="Movie%20Match%20Logo.png">
+            </button>
+            <div class="modal fade" id="myModal1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-body">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Choose a Genre and start Matching!</h4>
+                        </div>
+                        <div class="modal-body info">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Example select</label>
+                                    <select class="form-control" id="genreForm">
+                                        <option value="Documentary">Documentary</option>
+                                        <option value="Drama">Drama</option>
+                                        <option value="Action">Action</option>
+                                        <option value="Comedy">Comedy</option>
+                                        <option value="Romance">Romance</option>
+                                        <option value="Thriller">Thriller</option>
+                                        <option value="Crime">Crime</option>
+                                        <option value="Sci-fi">Sci-Fi</option>
+                                        <option value="Animation">Animated</option>
+                                        <option value="Short">Short</option>
+                                        <option value="News">News</option>
+                                        <option value="Sport">Sport</option>
+                                        <option value="Adventure">Adventure</option>
+                                        <option value="Horror">Horror</option>
+                                        <option value="Musical">Musical</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
 
-                                <!-- Modal -->
-                                
-                                <button type="submit" id = "submitBtn" class="btn btn-danger" data-dismiss="modal">Match!</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
+                            <!-- Modal -->
+
+                            <button type="submit" id = "submitBtn" class="btn btn-danger" data-dismiss="modal">Match!</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="randomModal" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header modal-body">
-                                <div id = "title" class = "row align-self-start">
+            </div>
+            <div class="modal fade" id="randomModal" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header modal-body">
+                            <div id = "title" class = "row align-self-start">
                                 <h1></h1>
-                                </div>
-                                <button type="button" class="close whiteText" data-dismiss="modal" aria-label="Close" id="closeRandom">
-                                    <span aria-hidden="true" class="exit-Size">&times;</span>
-                                </button>
                             </div>
-                            <div class="modal-body">
-                                <div class = "container col-12">
-                                    <div id = "poster" class = "col-7 float-left">
-                                        <img>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class = "container col-12">
+                                <div id = "poster" class = "col-7 float-left">
+                                    <img>
+                                </div>
+
+                                <div id = "info" class = "container col-5 float-right">
+
+
+                                    <hr class = "row line">
+
+                                    <div id = "rating" class = "whiteText col-12">
+                                        <p>
+
+                                        </p>
                                     </div>
 
-                                    <div id = "info" class = "container col-5 float-right">
+                                    <hr class = "line col-12">
 
-
-                                        <hr class = "row line">
-
-                                        <div id = "rating" class = "whiteText col-12">
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        
-                                        <hr class = "line col-12">
-                                        
-                                        <div id = "year" class = "whiteText col-12">
-                                            <p> </p>
-                                        </div>
-                                        
-                                        <hr class = "line col-12">
-                                        
-                                        <div id = "genreText" class = "whiteText col-12">
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        
-                                        <hr class = "line col-12">
-                                        
-                                        <div id = "description" class = "whiteText col-12">
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        
-                                        <hr class = "line col-12">
-                                        
-                                        <div id = "buttons" class = "col-12">
-                                            <button id = "playBtn" class = "float-left btn-success choiceBtn col-4" type = "button">Play</button>
-                                            <button id = "listBtn" class = "float-none btn-primary choiceBtn col-4" type = "button">List</button>
-                                            <button id = "dislikeBtn" class = "float-right btn-danger choiceBtn col-4" type = "button">Nope</button>
-                                        </div>
-                                        
+                                    <div id = "year" class = "whiteText col-12">
+                                        <p> </p>
                                     </div>
+
+                                    <hr class = "line col-12">
+
+                                    <div id = "genreText" class = "whiteText col-12">
+                                        <p>
+
+                                        </p>
+                                    </div>
+
+                                    <hr class = "line col-12">
+
+                                    <div id = "description" class = "whiteText col-12">
+                                        <p>
+
+                                        </p>
+                                    </div>
+
+                                    <hr class = "line col-12">
+
+                                    <div id = "buttons" class = "col-12">
+                                        <button id = "playBtn" class = "float-left btn-success choiceBtn col-4" type = "button">Play</button>
+                                        <button id = "listBtn" class = "float-none btn-primary choiceBtn col-4" type = "button">List</button>
+                                        <button id = "dislikeBtn" class = "float-right btn-danger choiceBtn col-4" type = "button">Skip</button>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="modal-footer modal-body">
-                            </div>
+                        </div>
+                        <div class="modal-footer modal-body">
                         </div>
                     </div>
                 </div>
-            </li>
+            </div>
+        </div>
+        <ul class="navbar-nav ">
             <form class="form-inline my-2 my-lg-2">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-danger my-2 my-sm-0 text-white " type="submit">Search</button>
@@ -238,7 +235,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -264,7 +261,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -290,7 +287,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -316,7 +313,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -342,7 +339,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -368,7 +365,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -402,8 +399,8 @@
                     <!-- Modal content-->
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
-                                
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -428,8 +425,8 @@
                     <!-- Modal content-->
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
-                                
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -454,8 +451,8 @@
                     <!-- Modal content-->
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
-                                
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -480,8 +477,8 @@
                     <!-- Modal content-->
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
-                                
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -506,8 +503,8 @@
                     <!-- Modal content-->
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
-                                
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -532,8 +529,8 @@
                     <!-- Modal content-->
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
-                                
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -568,7 +565,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -594,7 +591,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -620,7 +617,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -646,7 +643,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -672,7 +669,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -698,7 +695,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -733,7 +730,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -759,7 +756,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -785,7 +782,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -811,7 +808,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -837,7 +834,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
@@ -863,7 +860,7 @@
                         <div class="modal-content modal-body">
                             <div class="modal-header title">
                                 
-                                <button type="button" class="close modal-body" data-dismiss="modal">&times;</button>
+
                             </div>
                             <div class="modal-body info">
                                 
