@@ -38,6 +38,8 @@
                 currentMovies.splice(movieIndex, movieIndex + 1);
                 movieIndex = Math.floor(Math.random() * currentMovies.length);
                 GenerateMatch(currentMovies, movieIndex);
+                $("#listBtn").removeClass("btn");
+                $("#listBtn").addClass("btn-primary");
             });
             
             $("#submitBtn").click(function() {
@@ -47,10 +49,26 @@
                 generateSelection(currentMovies, result);
                 movieIndex = Math.floor(Math.random() * currentMovies.length);
                 GenerateMatch(currentMovies, movieIndex);
+                $("#listBtn").removeClass("btn");
+                $("#listBtn").addClass("btn-primary");
                 $("#randomModal").modal();
             }); 
             
+            $("#listBtn").click(function() {
+               myList.push(currentMovies[movieIndex]);
+                               
+                $(this).removeClass("btn-primary");
+                $(this).addClass("btn");
+            });
+            
             $("#closeRandom").click(function() {
+                $("#listBtn").removeClass("btn");
+                $("#listBtn").addClass("btn-primary");
+                AddList();
+                
+                for (var i = 0; i < myList.length; i++) {
+                    console.log("number: " + i + myList[i].title);
+                }
                 currentMovies = [];
             });
         });
@@ -139,7 +157,7 @@
                             <div id = "title" class = "row align-self-start">
                                 <h1></h1>
                             </div>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="button" id = "closeRandom" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                         <div class="modal-body">
                             <div class = "container col-12">
@@ -217,13 +235,13 @@
         </ul>
     </div>
 </nav>
-
-
+    
 <div class="container-fluid container-space">
     <h2 class="genreHeadlines">Det bliver der set</h2>
     <div class="inline">
         <button type="button" class="btn btn-dark scroll-Lbutton"> <i class="fas fa-angle-left"></i> </button>
         <div class="inline beingWatch">
+            
             <div class="inline watch">
                 <button type="button" class="modal-button watchBtn1">
                     
@@ -877,6 +895,171 @@
         </div>
         <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
     </div>
+</div>
+    
+<div class="container-fluid container-space">
+    <h2 class="genreHeadlines">Min Liste</h2>
+    <div class="inline">
+        <button type="button" class="btn btn-dark scroll-Lbutton myListBtn"> <i class="fas fa-angle-left"></i> </button>
+        <div class="inline listMovies">
+            <div class="inline list">
+                <button type="button" class="modal-button myListBtn1">
+                    
+                </button>
+                <div class="modal fade listModal1" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline watch">
+                <button type="button" class="modal-button myListBtn2">
+                    
+                </button>
+                <div class="modal fade listModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline watch">
+                <button type="button" class="modal-button myListBtn3">
+                    
+                </button>
+                <div class="modal fade listModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline watch">
+                <button type="button" class="modal-button myListBtn4">
+                    
+                </button>
+                <div class="modal fade listModal4" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline watch">
+                <button type="button" class="modal-button myListBtn5">
+                    
+                </button>
+                <div class="modal fade listModal5" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline watch">
+                <button type="button" class="modal-button myListBtn6">
+                    
+                </button>
+                <div class="modal fade listModal6" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content modal-body">
+                            <div class="modal-header title">
+                                
+
+                            </div>
+                            <div class="modal-body info">
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Play</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <button type="button" class="btn btn-dark scroll-Rbutton"><i class="fas fa-angle-right"></i></button>
+    </div>
+</div>
 </div>
 
 

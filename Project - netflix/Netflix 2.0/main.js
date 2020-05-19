@@ -49,6 +49,21 @@ function AddMovies() {
     }
 }
 
+function AddList() {
+    let actionMovies = $(`.list`);
+    let actionData = action.slice(0, listMovies.length);
+    
+    for(var i = 0; i < myList.length; i++) {
+        $(myList[i]).find(`.myListBtn{i+1}`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${myList[i].img}" alt="">`);
+        
+        $(myList[i]).find(`.title`).prepend(`<h4 class="modal-title"> ${myList[i].title} </h4>`);
+        
+        $(myList[i]).find(`.info`).prepend(`<br><p>${myList[i].synopsis}</p>`);
+        
+        $(myList[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${myList[i].img}" alt="">`);
+    }
+}
+
 function generateSelection(currentMovies, genre) {
     for (i = 0; i < movies.length; i++) {
         if (movies[i].genre.includes(genre)) {
@@ -72,9 +87,10 @@ function GenerateMatch(currentMovies, movieIndex) {
         $("#title h1").html(`No More Movies Left`);
         $('#rating p').html(`<p></p>`);
         $('#genreText p').html(`<p></p>`);
-        $('#description p').html(`<p>There are currently no more movies left within these parameters.`);
-        $('#poster').html(`<img class="col-12 movPoster" src="Movie%20Match%20Logo.png">`);
+        $('#description p').html(``);
+        $('#poster').html(`<div id = "poster" class = "col-12"><img class="movPoster" src="Movie%20Match%20Logo.png"></div>`);
         $('#year p').html(`<p></p>`);  
+        $("#info").html('<div id = "info" class = "container col-0 float-right">');
     }
     
 }
@@ -196,3 +212,7 @@ function ModalButtons() {
         $("div").removeClass("modal-backdrop");
      });
 }
+
+// My List
+var myList = [];
+
