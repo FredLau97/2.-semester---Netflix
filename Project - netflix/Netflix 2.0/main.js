@@ -38,6 +38,7 @@ function AddMovies() {
         $(docMovies[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${docData[i].img}" alt="">`);
     }
     
+    
     for(var i = 0; i < thrillerMovies.length; i++) {
         $(thrillerMovies[i]).find(`.thrlBtn${i+1}`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${thrillerData[i].img}" alt="">`);
         
@@ -46,30 +47,47 @@ function AddMovies() {
         $(thrillerMovies[i]).find(`.info`).prepend(`<br><p>${thrillerData[i].synopsis}</p>`);
         
         $(thrillerMovies[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${thrillerData[i].img}" alt="">`);
+        
+        
     }
 }
 
 function AddList() {
-    let actionMovies = $(`.list`);
-    let actionData = action.slice(0, listMovies.length);
+    let listMovies = $(`.list`);
+    let listData = myList.slice(0, listMovies.length);
     
-    for(var i = 0; i < myList.length; i++) {
-        $(myList[i]).find(`.myListBtn{i+1}`).prepend(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${myList[i].img}" alt="">`);
+    for (var i = 0; i < listData.length; i++) {
+        console.log(listData[i].title);
+    }
+    
+    for(var i = 0; i < listMovies.length; i++) {
+        $(listMovies[i]).find(`.myListBtn${i+1}`).html(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${listData[i].img}" alt="">`);
         
-        $(myList[i]).find(`.title`).prepend(`<h4 class="modal-title"> ${myList[i].title} </h4>`);
+        $(listMovies[i]).find(`.title`).html(`<h4 class="modal-title"> ${listData[i].title} </h4>`);
         
-        $(myList[i]).find(`.info`).prepend(`<br><p>${myList[i].synopsis}</p>`);
+        $(listMovies[i]).find(`.info`).html(`<br><p>${listData[i].synopsis}</p>`);
         
-        $(myList[i]).find(`.info`).prepend(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${myList[i].img}" alt="">`);
+        $(listMovies[i]).find(`.modalPoser`).html(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${listData[i].img}" alt="">`);
     }
 }
 
 function generateSelection(currentMovies, genre) {
-    for (i = 0; i < movies.length; i++) {
-        if (movies[i].genre.includes(genre)) {
-             currentMovies.push(movies[i]);       
+    
+    if (genre == "Movies") {
+        for (i = 0; i < movies.length; i++) {
+            if (movies[i].genre != null) {
+                currentMovies.push(movies[i]);       
+            }           
         }
     }
+    else {
+        for (i = 0; i < movies.length; i++) {
+            if (movies[i].genre.includes(genre)) {
+                currentMovies.push(movies[i]);       
+            }      
+        }   
+    }
+    
     return currentMovies;
 }
 
@@ -195,7 +213,33 @@ function ModalButtons() {
     $(".thrlBtn6").click(function(){
         $(".thrlModal6").modal();
     });
-
+    
+    //List MODALS FUNCTIONALITY
+    $(".myListBtn1").click(function(){
+        $(".listModal1").modal();
+    });
+    
+    $(".myListBtn2").click(function(){
+        $(".listModal2").modal();
+    });
+    
+    $(".myListBtn3").click(function(){
+        $(".listModal3").modal();
+    });
+    
+    $(".myListBtn4").click(function(){
+        $(".listModal4").modal();
+    });
+    
+    $(".myListBtn5").click(function(){
+        $(".listModal5").modal();
+    });
+    
+    $(".myListBtn6").click(function(){
+        $(".listModal6").modal();
+    });
+    
+    // -.-
     $("#myBtn1").click(function () {
         $("#myModal1").modal();
     });
