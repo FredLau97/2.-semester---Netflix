@@ -77,7 +77,7 @@ function GenerateMatch(currentMovies, movieIndex) {
     
     if (currentMovies.length > 0) {
         $("#title h1").html(`<h1 class = "whiteText">${currentMovies[movieIndex].title}</h1>`);
-        $('#rating p').html(`<p><strong>IMDB</strong>: ${currentMovies[movieIndex].rating} / 10</p>`);
+        $('#rating p').html(`<p class="noMargin"><img class="ImdbLogo" src="imdblogo.png"> ${currentMovies[movieIndex].rating} / 10</p>`);
         $('#genreText p').html(`<p><strong>Genre:</strong> ${currentMovies[movieIndex].genre}</p>`);
         $('#description p').html(`<p><strong>Beskrivelse:</strong> ${currentMovies[movieIndex].synopsis}</p>`);
         $('#poster').html(`<img class="col-12 movPoster" src="${currentMovies[movieIndex].img}">`);
