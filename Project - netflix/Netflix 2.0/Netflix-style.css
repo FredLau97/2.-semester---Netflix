@@ -19,6 +19,14 @@ body {
 	margin-left: 10px;
 }
 
+.ImdbLogo {
+	width: 80px;
+	height: 60px;
+}
+
+.noMargin {
+	margin: 0px;
+}
 
 .movieMatch-logo{
 	width: 80px;
