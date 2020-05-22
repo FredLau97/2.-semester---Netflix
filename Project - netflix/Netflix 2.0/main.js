@@ -258,5 +258,5 @@ function ModalButtons() {
 }
 
 // My List
-var myList = [];
+var myList = []; //Nice :((((((((((((((((
 
