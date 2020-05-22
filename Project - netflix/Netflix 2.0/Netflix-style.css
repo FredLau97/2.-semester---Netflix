@@ -122,3 +122,11 @@ body {
 .movieMatch-Pos {
 	margin-right: 800px;
 }
+
+.listColor {
+    background-color: rgb(229, 9, 20);
+}
+
+.listBackground {
+    background: linear-gradient(180deg, rgba(229,9,20,1) 0%, rgba(18,17,17,1) 30%);
+}
