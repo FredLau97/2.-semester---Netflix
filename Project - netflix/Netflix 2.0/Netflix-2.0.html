@@ -70,9 +70,10 @@
             
             $("#listBtn").click(function() {
                 if (!myList.includes(currentMovies[movieIndex])) {
-                    myList.push(currentMovies[movieIndex]);                               
-                    $(this).removeClass("btn-primary");
-                    $(this).addClass("btn");
+                    myList.push(currentMovies[movieIndex])
+                    currentMovies.splice(movieIndex, movieIndex + 1);
+                    movieIndex = Math.floor(Math.random() * currentMovies.length);
+                    GenerateMatch(currentMovies, movieIndex);
                 }
                 else {
                     console.log("Already in list")
