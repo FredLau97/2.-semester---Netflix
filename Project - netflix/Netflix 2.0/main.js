@@ -27,6 +27,7 @@ function AddMovies() {
     addMovieHelper(actionMovies, actionData, "actBtn");
     addMovieHelper(docMovies, docData, "docBtn");
     addMovieHelper(thrillerMovies, thrillerData, "thrlBtn");
+    $(".container-fluid").first().addClass("listBackground");
 }
 
 function AddList() {
@@ -37,8 +38,15 @@ function AddList() {
         console.log(listData[i].title);
     }
     
-    addMovieHelper(listMovies, listData, "myListBtn");
-
+    for(var i = 0; i < listMovies.length; i++) {
+        $(listMovies[i]).find(`.myListBtn${i+1}`).html(`<img class="moviePoster m-x-auto d-none d-sm-block" src="${listData[i].img}" alt="">`);
+        
+        $(listMovies[i]).find(`.title`).html(`<h4 class="modal-title"> ${listData[i].title} </h4>`);
+        
+        $(listMovies[i]).find(`.info`).html(`<br><p>${listData[i].synopsis}</p>`);
+        
+        $(listMovies[i]).find(`.modalPoser`).html(`<img class="modal-Poster m-x-auto d-none d-sm-block" src="${listData[i].img}" alt="">`);
+    }
 }
 
 function generateSelection(currentMovies, genre) {
