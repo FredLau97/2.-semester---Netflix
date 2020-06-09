@@ -21,7 +21,7 @@ function AddMovies() {
     let actionData = action.slice(0, actionMovies.length);
     let docData = documentary.slice(0, docMovies.length);
     let thrillerData = thriller.slice(0, thrillerMovies.length);
-    let watchData = buffer.slice(0, watchMovies.length);
+    let watchData = buffer.slice(7, watchMovies.length+7);
 
     addMovieHelper(watchMovies, watchData, "watchBtn");
     addMovieHelper(actionMovies, actionData, "actBtn");
